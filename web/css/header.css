@@ -62,18 +62,34 @@ header .action.search {
     width: 100%; 
 }
 
+/* Ocultamos item.link.compare */
+
+.item.link.compare, .greet.welcome {
+    display: none !important; 
+}
+
 /* Carrito de compras */
 
 header .minicart-wrapper {
-    margin: 0;
-    display: flex;
-    align-items: center;
-    font-weight: bold;
+    margin-left: 0 !important; 
 }
 
-header .minicart-wrapper .action.showcart:before {
+header .action.showcart {
+    display: flex !important; 
+    align-items: center;
+}
+
+header .minicart-wrapper .action.showcart:before, header .minicart-wrapper .action.showcart.active:before {
     display: none;
 }
+
+/* Contador de productos en el carrito */
+
+.minicart-wrapper .action.showcart .counter.qty {
+    background-color: #b8bf0d;
+    border-radius: 50%;
+}
+
 
 /* Categorias */
 

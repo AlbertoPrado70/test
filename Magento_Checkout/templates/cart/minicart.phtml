@@ -10,7 +10,8 @@
 <div data-block="minicart" class="minicart-wrapper">
     <a class="action showcart" href="<?= $block->escapeUrl($block->getShoppingCartUrl()) ?>"
        data-bind="scope: 'minicart_content'">
-        <span> Carrito </span>
+        <img width="22" src="<?= $block->getViewFileUrl("/images/Minicart.svg") ?>">
+        <span style="padding: 0 12px;"> Carrito </span>
         <span class="text"><?= $block->escapeHtml(__('Mi carrito de compras')) ?></span>
         <span class="counter qty empty"
               data-bind="css: { empty: !!getCartParam('summary_count') == false && !isLoading() }, blockLoader: isLoading">
