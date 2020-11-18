@@ -1,3 +1,5 @@
+/* Header rejilla */
+
 .header.content {
     display: grid; 
     grid-template-columns: auto 1fr;
@@ -16,15 +18,21 @@ header .logo {
     max-width: 100%;
 }
 
-.panel.wrapper {
+header .panel.wrapper {
     grid-area: 1 / 2 / 2 / 3;
     display: grid; 
     grid-template-columns: 1fr auto;
     align-items: center;
     border-style: none !important;
+    gap: 22px;
 }
 
-.panel.header {
+header .panel.wrapper a {
+    color: #333333;
+    font-weight: bold;
+}
+
+header .panel.header {
     margin: 0 !important;
 }
 
@@ -64,8 +72,12 @@ header .action.search {
 
 /* Ocultamos item.link.compare */
 
-.item.link.compare, .greet.welcome {
+.item.link.compare, .greet.welcome, .link.wishlist {
     display: none !important; 
+}
+
+header .minicart-wrapper .action.showcart:before, header .minicart-wrapper .action.showcart.active:before {
+    display: none;
 }
 
 /* Carrito de compras */
@@ -79,8 +91,44 @@ header .action.showcart {
     align-items: center;
 }
 
-header .minicart-wrapper .action.showcart:before, header .minicart-wrapper .action.showcart.active:before {
-    display: none;
+header .header.links {
+    display: grid !important;
+    align-items: center;
+    grid-template-columns: auto auto;
+    gap: 22px;
+}
+
+header .header.links li:nth-child(2) {
+    order: 2;
+}
+
+header .header.links li:nth-child(2) a {
+    display: flex; 
+}
+
+header .header.links li:nth-child(2) a:before {
+    content: ""; 
+    display: block; 
+    background-image: url("../images/Minicart.svg");
+    background-size: contain; 
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 22px;
+    width: 22px; 
+    margin-right: 16px;
+}
+
+/* Telefonos */
+
+.header-phone {
+    display: grid !important;
+    grid-template-columns: auto 1fr;
+    gap: 28px;
+    align-items: center;
+}
+
+.header-phone a {
+    font-weight: normal !important;
 }
 
 /* Contador de productos en el carrito */
@@ -88,8 +136,10 @@ header .minicart-wrapper .action.showcart:before, header .minicart-wrapper .acti
 .minicart-wrapper .action.showcart .counter.qty {
     background-color: #b8bf0d;
     border-radius: 50%;
+    display: inline-block !important;
+    margin: 12px 0 0 -12px;
+    transform: scale(0.8);
 }
-
 
 /* Categorias */
 

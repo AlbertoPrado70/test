@@ -11,7 +11,6 @@
     <a class="action showcart" href="<?= $block->escapeUrl($block->getShoppingCartUrl()) ?>"
        data-bind="scope: 'minicart_content'">
         <img width="22" src="<?= $block->getViewFileUrl("/images/Minicart.svg") ?>">
-        <span style="padding: 0 12px;"> Carrito </span>
         <span class="text"><?= $block->escapeHtml(__('Mi carrito de compras')) ?></span>
         <span class="counter qty empty"
               data-bind="css: { empty: !!getCartParam('summary_count') == false && !isLoading() }, blockLoader: isLoading">
@@ -23,6 +22,7 @@
             <!-- /ko -->
             </span>
         </span>
+        <span class="header-nav-link"> Carrito </span>
     </a>
     <?php if ($block->getIsNeedToDisplaySideBar()) :?>
         <div class="block block-minicart"

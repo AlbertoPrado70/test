@@ -3,5 +3,16 @@
     <body>
         <move element="header.panel.wrapper" destination="header-wrapper"/>
         <move element="minicart" destination="header.panel.wrapper"/>
+        <referenceBlock name="top.links">
+            <referenceBlock name="register-link" remove="true" />
+            <referenceBlock name="authorization-link-login" remove="true" />
+            <block class="Magento\Customer\Block\Account\Link" name="my-account-link">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true"> Mi cuenta </argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+        <referenceBlock name="footer_links" remove="true" />
+        <referenceBlock name="report.bugs" remove="true" />
     </body>
 </page>
