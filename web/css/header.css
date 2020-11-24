@@ -34,6 +34,7 @@ header .panel.wrapper a {
 
 header .panel.header {
     margin: 0 !important;
+    padding: 0 !important;
 }
 
 header .minisearch {
@@ -68,6 +69,12 @@ header .action.search {
     border-bottom-right-radius: 36px;
     background-color: #b8bf0d !important;
     width: 100%; 
+    opacity: 1 !important;
+}
+
+header .action.search::before {
+    color: #fff !important;
+    font-size: 28px !important;
 }
 
 /* Ocultamos item.link.compare */
@@ -96,6 +103,7 @@ header .header.links {
     align-items: center;
     grid-template-columns: auto auto;
     gap: 22px;
+    list-style-type: none !important;
 }
 
 header .header.links li:nth-child(2) {
@@ -104,17 +112,18 @@ header .header.links li:nth-child(2) {
 
 header .header.links li:nth-child(2) a {
     display: flex; 
+    align-items: center;
 }
 
 header .header.links li:nth-child(2) a:before {
     content: ""; 
     display: block; 
-    background-image: url("../images/Minicart.svg");
+    background-image: url("../images/Cuenta.svg");
     background-size: contain; 
     background-position: center;
     background-repeat: no-repeat;
-    height: 22px;
-    width: 22px; 
+    height: 36px;
+    width: 32px; 
     margin-right: 16px;
 }
 
@@ -125,6 +134,7 @@ header .header.links li:nth-child(2) a:before {
     grid-template-columns: auto 1fr;
     gap: 28px;
     align-items: center;
+    margin-left: 0 !important;
 }
 
 .header-phone a {
@@ -143,10 +153,163 @@ header .header.links li:nth-child(2) a:before {
 
 /* Categorias */
 
+.navigation ul {
+    display: grid !important;
+    grid-template-columns: repeat(10, auto);
+    align-items: center;
+    justify-items: center;
+    padding: 12px 0 !important;
+}
+
+.navigation ul li a {
+    line-height: 18px !important;
+    text-align: center;
+    border-style: none !important
+}
+
 .nav-sections-item-content, .nav-sections-item-content .navigation{
     background-color: #243137;
 }
 
 .nav-sections-item-content a {
     color: #fff !important;  
+}
+
+/* Header: 1300px */
+
+@media (max-width: 1300px) {
+
+    .header.content {
+        padding: 10px 20px 0 20px;
+    }
+
+}
+
+@media (max-width: 980px) {
+
+    .sections.nav-sections {
+        overflow-x: scroll;
+        background-color: #243137;
+    }
+
+}
+
+@media (max-width: 900px) {
+
+    .header.links {
+        grid-template-columns: 1fr !important;
+        margin: 0 !important;
+        align-items: center;
+        padding: 0 !important;
+    }
+
+    .header.links li {
+        margin: 0 !important;
+    }
+
+    .header-phone {
+        display: none !important;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .header.content {
+        grid-template-columns: auto auto 1fr;
+        column-gap: 16px;
+        padding-bottom: 12px;
+    }
+
+    .nav-toggle {
+        position: static !important;
+    }
+
+    .logo {
+        grid-area: auto !important;
+        grid-area: 1 / 2 / 2 / 3 !important;
+        width: 82px !important;
+    }
+
+    .panel.wrapper {
+        grid-area: 1 / 3 / 2 / 4 !important;
+    }
+
+
+    header .header.links li:nth-child(2) a {
+        justify-content: flex-end;
+        font-size: 0 !important; 
+    }
+
+    .minicart-wrapper {
+        margin-top: 0 !important;
+    }
+    
+    .header-nav-link {
+        display: none !important;
+    }
+
+    .block.block-search {
+        grid-area: 2 / 1 / 3 / 4;       
+        width: 100% !important;
+    }
+
+    .input-text {
+        position: static !important;   
+        height: 38px !important;  
+        margin: 0 0 0 0 !important;
+    }
+
+    .action.search {
+        display: block !important; 
+        height: 38px !important; 
+        color: #fff;
+    }
+
+    .field.search .label {
+        display: none !important;
+    }
+
+    .minisearch .actions {
+        display: flex !important;
+        align-items: center;
+    }
+
+    .minisearch .control {
+        border-style: none !important;
+        margin: 0 !important;
+    }
+
+    .header.content {
+        border-bottom: 6px #243137 solid;
+    }
+
+    .nav-sections {
+        background-color: #243137;
+    }
+
+    .navigation ul {
+        display: flex !important; 
+        flex-direction: column; 
+        align-items: flex-start;
+
+    }
+
+    .navigation ul li {
+        width: 100%; 
+        padding: 12px 0;
+        border: 1px solid #324249 !important;
+    }
+
+    .navigation ul li a {
+        text-align: left;
+    }
+
+}
+
+/* Hasta la vista baby */
+
+button.action.primary {
+    background-color: #b8bf0d !important;
+    border-style: none !important;
 }

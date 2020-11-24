@@ -1,0 +1,149 @@
+/* Pagina Link */
+.breadcrumbs a:visited {
+    color: #b8bf0d;
+    text-decoration: none;
+}
+
+/* Productos */
+
+.column.main {
+    float: none !important;
+    padding: 0 !important;
+    width: 100% !important;
+}
+
+.breadcrumbs li a, .breadcrumbs li strong {
+    color: #b8bf0d;
+}
+
+/* Ocultamos sidebar */
+
+.sidebar.sidebar-additional {
+    display: none !important; 
+}
+
+/* Titulo */
+
+.page-title {
+    font-weight: bold !important; 
+    font-size: 26px;
+    margin-top: 0 !important;
+}
+
+/* Stock */ 
+
+.stock {
+    display: none !important; 
+}
+
+/* SKU */
+
+.product.attribute.sku {
+    color: #303030 !important;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+/* Precio */
+
+.price-final_price .price {
+    font-size: 26px !important;
+}
+
+.price-box {
+    margin-bottom: 16px !important;
+}
+
+/* Calificación */
+
+.product-reviews-summary {
+    margin: 0 !important; 
+    margin-bottom: 26px !important;
+}
+
+.rating-result span::before {
+    color: #f1d744 !important;
+}
+/* Reseñas */
+.review-form .action.submit.primary {
+    padding: 15px;
+    background: #b8bf0d;
+    border: 1px solid #b8bf0d;
+    color: #fff;
+    font-size: 18px;
+}
+.review-form .action.submit.primary:hover {
+    background:  #b8bf0d;
+    border: 1px solid  #b8bf0d;
+    color: #fff;
+}
+/*Articulos relacionados */
+button, .cart.table-wrapper .actions-toolbar > .action, .action-gift {
+    background-image: none;
+    background: #b8bf0d;
+    border: 1px solid #b8bf0d;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    margin: 0;
+    padding: 10px 20px;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+button:hover, .cart.table-wrapper .actions-toolbar > .action:hover, .action-gift:hover {
+    background:  #b8bf0d;
+    border: 1px solid #b8bf0d;
+    color: #fff;
+}
+/* Añadir al carrito */
+
+.product-add-form {
+    order: 2;
+}
+
+.action.primary.tocart {
+    background-color: #b8bf0d;
+    border-style: none !important;
+}
+
+/* Social Links */
+
+.product-social-links {
+    display: none !important; 
+}
+
+/* Atributos */
+
+.product.attribute.overview {
+    margin: 0 !important;
+}
+
+.product.attribute.overview p {
+    font-size: 16px !important;
+}
+
+/* Pestañas información adicional */
+
+.product.data.items {
+    display: grid; 
+    grid-template-columns: 1fr;
+}
+
+.data.item.title a {
+    background-color: transparent !important;
+    border-style: none !important;
+}
+
+.data.item.content, .block.review-list {
+    display: block !important;
+    float: none !important; 
+    margin: 0 !important; 
+}
+
+.data.item.title:first-child, .data.item.content[aria-labelledby="tab-label-related.post.tab"] {
+    display: none !important; 
+}
