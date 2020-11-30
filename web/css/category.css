@@ -1,4 +1,4 @@
-.sidebar-additional, .toolbar {
+.sidebar-additional, .toolbar:first-child {
     display: none !important;
 }
 
@@ -56,7 +56,7 @@
     position: relative;
     padding: 16px;
     box-sizing: border-box;
-    min-height: 440px;
+    min-height: 416px;
 }
 
 .product-item-info::before {
@@ -80,14 +80,6 @@
     flex-direction: column;
 }
 
-.product-item-name a::before {
-    content: "Pasta" !important;
-    font-weight: 300; 
-    font-size: 18px;
-    color: #aaaaaa;
-    margin-bottom: 12px;
-}
-
 .product-item-inner {
     display: none !important;
 }
@@ -98,10 +90,40 @@
     content: "";
     width: 100%;
     height: 620px;
-    background-image: url("../images/BannerTest.png");
+    /* background-image: url("../images/BannerTest.png"); */
     display: block;
     background-size: contain;
     background-repeat: no-repeat;
+}
+.filter-options a{
+    color: #b8bf0d;
+    font-size:12px;
+}
+.filter-actions span{
+    color: #b8bf0d;
+    font-size:13px;
+}
+.action.remove span{
+    color: #b8bf0d;
+    font-size:13px;
+}
+
+/* Paginacion */
+.pages strong.page {
+    font-size: 1.2rem;
+    line-height: 3.2rem;
+    letter-spacing: normal;
+    color: #b8bf0d;
+    display: inline-block;
+    font-weight: 700;
+    padding: 0 4px;
+}
+
+.pages a.page {
+    color: #333!important;
+    display: inline-block;
+    padding: 0 4px;
+    text-decoration: none;
 }
 
 /* Version Movil */
@@ -168,6 +190,8 @@
         position: relative;
         padding: 16px;
         box-sizing: border-box;
-        min-height: 400px!important;
+        min-height: 380px!important;
     }
     }
+
+

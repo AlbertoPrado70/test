@@ -35,7 +35,7 @@
 .footer-contactanos, .footer-contactanos:hover {
     background-color: #b8bf0d;
     padding: 12px 24px; 
-    color: #fff;
+    color: #fff!important;
     border-radius: 36px;
     font-weight: bold;
     margin-bottom: 26px;
@@ -49,8 +49,8 @@
     grid-template-columns: auto 1fr;
     column-gap: 26px;
     row-gap: 4px;
-    margin-top: 52px;
-    margin-bottom: 28px;
+    margin-top: 36px;
+    margin-bottom: 36px;
 }  
 
 .footer-ayuda img {

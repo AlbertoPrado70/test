@@ -155,7 +155,7 @@ header .header.links li:nth-child(2) a:before {
 
 .navigation ul {
     display: grid !important;
-    grid-template-columns: repeat(10, auto);
+    grid-template-columns: repeat(11, auto);
     align-items: center;
     justify-items: center;
     padding: 12px 0 !important;
@@ -309,7 +309,7 @@ header .header.links li:nth-child(2) a:before {
 
 /* Hasta la vista baby */
 
-button.action.primary {
+.action.primary {
     background-color: #b8bf0d !important;
     border-style: none !important;
 }
