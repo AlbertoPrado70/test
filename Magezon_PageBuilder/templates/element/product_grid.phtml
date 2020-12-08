@@ -54,7 +54,7 @@ $htmlId               = $element->getHtmlId();
 				<div class="mgz-grid-page mgz-grid-col-xl-<?= $xl ?> mgz-grid-col-lg-<?= $lg ?> mgz-grid-col-md-<?= $md ?> mgz-grid-col-sm-<?= $sm ?> mgz-grid-col-xs-<?= $xs ?>">
 				<?php foreach ($_items as $_product) { ?>
 					<div class="item product product-item mgz-grid-item">
-						<div class="product-item-info">
+						<div class="tg-product product-item-info">
 							<?php if ($showImage) { ?>
 							<?php $productImage = $block->getImage($_product, $imageId); ?>
 		                    <a href="<?= $_product->getProductUrl() ?>" class="product photo product-item-photo" tabindex="-1">
@@ -67,6 +67,13 @@ $htmlId               = $element->getHtmlId();
 							<?php } ?>
 							<div class="product details product-item-details">
 								<?php if ($showName) { ?>
+									<?php 
+										$cats = $_product->getCategoryCollection()->addAttributeToSelect("name"); 
+										foreach($cats as $category) {
+											echo "<span class='product-info-category'>" . $category->getName() . "</span>";
+										}
+										echo $_product->getAttribute('manufacturer');
+									?>
 									<strong class="product-item-name">
 										<a title="<?= $block->escapeHtml($_product->getName()) ?>"
 											href="<?= $block->getProductUrl($_product) ?>"

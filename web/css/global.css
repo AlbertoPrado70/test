@@ -1,0 +1,128 @@
+/* Producto */
+
+.tg-product {
+    border: 1px solid #ececec !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100% !important;
+    margin: 0 !important;
+    box-sizing: border-box;
+}
+
+.product-image-container, .product-image-container img, .product-item-photo {
+    width: 100% !important;
+    height: auto;
+}
+
+.tg-product:hover img {
+    transform: scale(1.1);
+}
+
+.tg-product img {
+    transition: transform 0.25s;
+}
+
+.product-item-details {
+    width: 100%;
+}
+
+.product-info-category {
+    font-size: 18px; 
+    color: #aaaaaa;
+}
+
+.price-wrapper, .price-wrapper span {
+    font-size: 16px !important;
+}
+
+/* Ocultamos las categorias adicionales */
+
+.product-info-category:not(:first-child) {
+    display: none;
+}
+
+/* Whatsapp */
+
+.whatsapp-tg {
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px;
+    width: 64px;
+    height: 64px;
+    background-color: #25D366;
+    box-shadow: 0 0 10px #0002;
+    border-radius: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.whatsapp-tg svg {
+    width: 30px;
+}
+
+/* Orden */
+
+.products ol {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 22px;
+}
+
+.products .item {
+    width: 100% !important;
+    margin: 0 !important;
+}
+
+.first {
+    order: 1;
+}
+
+.second {
+    order: 2;
+}
+
+@media (max-width: 1360px) {
+
+    .products ol {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
+
+@media (max-width: 980px) {
+
+    .products ol {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (max-width: 560px) {
+
+    .products ol {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* Producto */
+
+.price-product {
+    font-weight: bold;
+}
+
+/* Header Flotante */
+
+@media (min-width: 768px) {
+
+    .sections.nav-sections {
+        position: sticky;
+        top: 0;
+        z-index: 999;
+    }
+
+}

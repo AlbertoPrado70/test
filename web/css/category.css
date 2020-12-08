@@ -52,25 +52,9 @@
 }
 
 .product-item-info {
-    border: 1px solid #dadada;
     position: relative;
     padding: 16px;
     box-sizing: border-box;
-    min-height: 416px;
-}
-
-.product-item-info::before {
-    content: "Nuevo";
-    position: absolute; 
-    top: 10px;
-    left: 10px;
-    background-color: #b8bf0d;
-    color: #fff;
-    z-index: 10;
-    border-radius: 50px;
-    font-size: 12px;
-    font-weight: bold;
-    padding: 4px 10px;
 }
 
 .product-item-name a {
@@ -95,20 +79,24 @@
     background-size: contain;
     background-repeat: no-repeat;
 }
+
 .filter-options a{
     color: #b8bf0d;
     font-size:12px;
 }
+
 .filter-actions span{
     color: #b8bf0d;
     font-size:13px;
 }
+
 .action.remove span{
     color: #b8bf0d;
     font-size:13px;
 }
 
 /* Paginacion */
+
 .pages strong.page {
     font-size: 1.2rem;
     line-height: 3.2rem;
@@ -127,8 +115,9 @@
 }
 
 /* Version Movil */
+
 @media (max-width: 767px){
-/*Sitebar*/
+
     .sidebar::after {
         content: "";
         width: 100%;
@@ -138,6 +127,7 @@
         background-size: contain;
         background-repeat: no-repeat;
     }
+    
     .column.main {
         display: flex;
         flex-direction: column;
@@ -145,21 +135,27 @@
         padding-left: 0px !important;
         padding-bottom: 0 !important;
     } 
+
     /* Newsletter */
+
     .mgz-newsletter-form-inline {
         display: inline-flex;
     }
+
     .mgz-newsletter-btn.action.primary {
         border-radius: 0 20px 20px 0!important;
         padding: 7px 10px!important;
     }
+
     .form16061705045fbc3788078c8 {
         width: 100%!important;
     } 
+
     /* Filtro de orden */
     .toolbar {
         display: block !important;
     } 
+    
     select {
         background: #ffffff;
         background-clip: padding-box;
@@ -174,17 +170,22 @@
         width: 100%;
         box-sizing: border-box;
     }
+
     .toolbar-products {
         margin-bottom: 10px!important;
         padding: 0 10px;
         text-align: center;
     }
+
     /*Filtro precio y marca */
+
     .block.filter {
         display: none;
         margin-bottom: 40px;
     }
+
     /*Productos*/
+
     .product-item-info {
         border: 1px solid #dadada;
         position: relative;
@@ -192,6 +193,7 @@
         box-sizing: border-box;
         min-height: 380px!important;
     }
-    }
+    
+}
 
 

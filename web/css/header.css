@@ -189,7 +189,18 @@ header .header.links li:nth-child(2) a:before {
 
     .sections.nav-sections {
         overflow-x: scroll;
-        background-color: #243137;
+        background-color: #243137 !important;
+    }
+
+    .section-item-title {
+        border-style: none !important; 
+        background-color: #243137 !important;
+        border-right: 1px solid #4e636d !important;
+        border-bottom: 1px solid #4e636d !important;
+    }
+
+    .section-item-title a {
+        color: #fff !important;
     }
 
 }

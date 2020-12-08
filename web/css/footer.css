@@ -84,8 +84,8 @@
 
 .footer-grid {
     display: grid; 
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 48px;
+    grid-template-columns: 1fr 1fr 2fr;
+    padding: 28px;
     gap: 64px;
 }
 
